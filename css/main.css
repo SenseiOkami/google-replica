@@ -1,0 +1,196 @@
+/* This (*) selects all the HTML ELEMENTS */
+* {
+	color: #000;
+}
+
+/* Margin controls the gap between boxes */
+body {
+	color: #222222;
+	margin: 0;
+}
+
+/*Text-decoration: none removes any decoration already applied to the text*/;
+a{
+	color: #222222;
+	text-decoration: none;
+}
+
+/*Text-decoration: underline adds a line underneath the text.*/
+/*Hover is used when a user hovers over an element (anchor) with a mouse.*/
+a: hover {
+	color: #222222;
+	text-decoration: underline; 
+}
+
+
+/*Google Top Section*/
+/*ul.nav selects the ul elements with the class of nav in the html. */
+/*Float allows to take an element in normal flow and place it to the far right of the containing element. */
+ul.nav {
+	float: right;
+	margin-right: 25px;
+}
+/* This section is applied to the li element inside any ul element with a class of nav.*/
+/*list-style allows to express style, image, and position properties in any order. */
+ul.nav li {
+	list-style: none;
+	display: inline-block;
+	text-align: right;
+	padding: 5px 10px 0 0;
+	vertical-align: bottom;
+	margin: 5px 5px 0 0;
+	font-size: 13px;
+}
+
+/*This section is applied to the div elements with a class of "fa"*/
+/*Opacity specifies the opacity of an element and any of ITS child elements.*/
+/*Cursor property allows you to control the mouse cursor that would be displayed to users*/
+div.fa {
+	font-size: 20px;
+	vertical-align: top;
+	opacity: 0.7;
+	cursor: default;
+}
+
+/*This selects the div elements with a class of "fa" that are hovered over.*/
+div.fa: hover {
+	opacity: 1.0;
+}
+
+/*This selects the span elements with a class of share. */
+/*Position:relative moves an element to where it would have been in normal flow.*/
+span.share {
+	background-color: #f2f2f2;
+	padding: 7px 15px;
+	cursor: default;
+	position: relative;
+	top: -3px;
+}
+
+/*This section selects the span elements with the class of share that are hovered over.*/
+span.share: hover {
+	background-color: #e1e1e1;
+}
+
+/*Focuses on the good looking profile pic section XD*/
+img.profile_img {
+	border-radius: 25px;
+	height: 32px;
+	width: 32px;
+	position: relative;
+	top: 9px;
+}
+
+
+/*Google Search Box, MIDDLE SECTION*/
+/*Position: absolute  takes the box out of normal flow and doesnt affect the position of other elements on the page. */
+div.GoogleSearchBox {
+	position: absolute;
+	margin-top: 75px;
+	width: 100%;
+}
+
+/*This focuses on the img element inside the div element with class of GoogleSearchBox.*/
+div.GoogleSearchBox img {
+	padding: 142px 0 24px 0;
+	display: block;
+	margin: 0 auto;
+}
+
+/*This selects the input element inside the div element with a class of GoogleSearchBox.*/
+div.GoogleSearchBox input {
+	width: 600px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #d9d9d9;
+	font-size: 16px;
+	border-radius: 5px;
+	display: block;
+}
+
+/*This selects the input element that is focused on, inside of the div element with a class of GoogleSearchBox. */
+div.GoogleSearchBox input:focus {
+	border-color: #f5f5f5;
+}
+
+/*This selects the div elements with a class of GoogleButton.*/
+div.GoogleButton {
+	text-align: center;
+	padding-left: 0;
+}
+
+/*This focuses on the button element inside the div elements with a class of GoogleButton*/
+div.GoogleButton button {
+	background-color: #f5f5f5;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	color: #666666;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 27px;
+	margin: 17px 6px;
+	padding: 0 12px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+/*Focuses on the button element that's hover on inside the div element with a class of GoogleButton. */
+div.GoogleButton button:hover {
+	background-color: #f8f8f8;
+	border: 1px solid #c6c6c6;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	color: #333333;
+}
+
+
+
+/*Google BOTTOM SECTION*/
+div.GoogleBottomSection {
+	bottom: 0 !important;
+	position: absolute;
+	width:100%;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+}
+/*This selects the ul element with the "left" and "right" classes, inside the div element with class of GoogleBottomSection.*/
+div.GoogleBottomSection ul.left,
+div.GoogleBottomSection ul.right {
+	margin: 0;
+}
+/*Selects the ul element with a class of left, inside any div element with a class of GoogleBottomSection*/
+div.GoogleBottomSection ul.left {
+	float:left;
+	padding-left:20px;
+}
+/*Selects the ul element with a class of right, inside any div element with a class of GoogleBottomSection*/
+div.GoogleBottomSection ul.right {
+	float:right;
+	padding-right:10px;
+}
+/*Selects the li element, inside any ul element with a "left" and "right" classes, inside any div element with a class of GoogleBottomSection*/
+div.GoogleBottomSection ul.left li,
+div.GoogleBottomSection ul.right li{
+	list-style: none;
+	display: inline;
+	line-height: 40px;
+}
+
+div.GoogleBottomSection ul.right li a:first-child {
+	padding-right:8px;
+}
+
+div.GoogleBottomSection ul.left li:nth-child(2),
+div.GoogleBottomSection ul.left li:nth-child(3) {
+	margin-left:7px;
+}
+
+/*Selects the anchor element, inside any li element, inside any ul element with a "left" or "right" class, inside any div element with a class of GoogleBottomSection.*/
+div.GoogleBottomSection ul.left li a,
+div.GoogleBottomSection ul.right li a {
+	color: #666666;
+  	margin: 2px 10px 0;
+  	letter-spacing: 0.1px;
+  	font-size: 14px;
+}
+
+

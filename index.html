@@ -1,0 +1,121 @@
+<!--Completing is NOT the goal, UNDERSTANDING is! -->
+
+
+<!--Standard tags we NEED before starting any project!!-->
+<!DOCTYPE html>
+
+<!--Lang attribute specifies the language of the element's content -->
+<htm lang="en">
+
+<head>
+  <!--The charset attribute specifies the character encoding for the HTML document. -->
+  <meta chrset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico">
+
+ <!--Unique title -->
+  <title>Google Replica</title>
+
+ <!-- Favorite Icon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+ <!--Font Awesome-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+ <!--Custom CSS-->
+ <link rel="stylesheet" href="css/main.css">  
+</head>
+
+<body>
+  
+  <!--Navigation for the TOP SECTION -->
+  <ul class ="nav">
+  	<!--Clicking on "Michael" will send you to google.com, AKA google homepage. -->
+  	<!--target=_blank is the target attribute specifies where to open the linked document. -->
+  	<li>
+  		<a href= "https://www.google.com/" target="_blank">+Michael</a>
+  	</li>
+
+  	<!--Clicking on "Mail" will send you to your gmail.-->
+  	<li>
+  		<a href= "https://mail.google.com/mail/?tab=wm" target="_blank">Mail</a>
+  	</li>
+
+  	<!--Clicking on "Images" will send you to the Google Images homepage.-->
+  	<li>
+  		<a href= "https://www.google.com/imghp?hl=en&tab=wi&ei=jtezVc6XNcq2ed_doeAL&ved=0CBQQqi4oAQ" target="_blank">Images</a>
+  	</li>
+
+  	<!--Font Awesome icons-->
+  	<li>
+  		<div class= "fa fa-th"></div>
+  	</li>
+
+  	<li>
+  		<div class= "fa fa-bell-o"></div>
+  	</li>
+
+  	<!--Need a span for "Share" because there's no other suitable element to differentiate it from surrounding text, etc. -->
+  	<li>
+  		<span class= "share">Share</span>
+ 	</li>
+  	
+  	<!--Class needed here for a good looking profile picture XD -->
+  	<li>
+  		<img class= "profile_img" src="img/michael.jpg" alt= "profile picture">
+  	</li>
+  </ul>
+
+
+  <!--Google Search Box -->
+  <div class= "GoogleSearchBox">
+  	<img src="img/google.png" alt= "google image">
+
+  	<!--Input type is used to create several forms of control. Value of TEXT means it creats a single line text input. -->
+  	<!--Autofocus specifies that an <input> element should automatically get focus when the page loads. -->
+  	<input type= "text" autofocus placeholder="Search Google or type a URL">
+
+  	<!--<button> is used to allow users more control over button appearance and allows other elements to appear inside of it -->
+  	<div class= "GoogleButton">
+  		<button>Google Search</button>
+  		<button>I'm Feeling Lucky</button>
+  	</div>
+
+  </div>
+
+ 
+  <div class= "GoogleBottomSection">
+
+ <!--Google Bottom Section, LEFT SIDE-->  	
+  	<ul class= "left">
+  		<li>
+  			<a href="https://www.google.com/intl/en/ads/?fg=1">Advertising</a>  			
+  		</li>
+
+  		<li>
+  			<a href="https://www.google.com/services/?fg=1">Business</a>
+  		</li>
+
+  		<li>
+  			<a href="https://www.google.com/intl/en/about.html?fg=1">About</a>
+  		</li>
+  	</ul>
+
+
+<!--Google Bottom Section, RIGHT SIDE -->
+    <ul class= "right">
+  		<li>
+  			<a href="https://www.google.com/intl/en/policies/privacy/?fg=1">Privacy</a>
+  		</li>
+
+  		<li>
+  			<a href="https://www.google.com/intl/en/policies/terms/?fg=1">Terms</a>
+  		</li>
+
+  		<li>
+  			<a href="https://www.google.com/preferences?hl=en">Settings</a>
+  		</li>
+    </ul>
+  </div>
+
+</body>
+</html>
